@@ -1,0 +1,5 @@
+solution_grid = ["", "", "", "", ""]
+
+[clues]
+col_clues = ["", ""]
+row_clues = ["", ""]

@@ -1,16 +1,16 @@
 use dep::std;
 
 struct Clues {
-    row_clues: [[u8; 2]; 5], // Each row has up to 2 clues, for simplicity
-    col_clues: [[u8; 2]; 5], // Each column has up to 2 clues
+    row_clues: [u8; 2], // Each row has up to 2 clues, for simplicity
+    col_clues: [u8; 2], // Each column has up to 2 clues
 }
 
-fn main(solution_grid: [[bool; 5]; 5], clues: Clues) {
+fn main(solution_grid: [bool; 5], clues: Clues) {
     // Iterate over each row and column to apply verification logic
-    for i in 0..5 {
-        verify_sol(solution_grid[i], clues.row_clues[i]);
-        verify_sol(solution_grid[i], clues.col_clues[i]);
-    }
+    //for i in 0..5 {
+    verify_sol(solution_grid, clues.row_clues);
+    verify_sol(solution_grid, clues.col_clues);
+    //}
 }
 
 // Function to verify a single row against its clues
