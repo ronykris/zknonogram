@@ -1,5 +1,5 @@
-solution_grid = [["", "", "", "", ""], ["", "", "", "", ""], ["", "", "", "", ""], ["", "", "", "", ""], ["", "", "", "", ""]]
+solution_grid = [[true,false,true,false,false],[false,false,true,true,true],[false,true,true,true,true],[false,false,false,false,false],[true,true,true,false,true]]
 
 [clues]
-col_clues = [["", ""], ["", ""], ["", ""], ["", ""], ["", ""]]
-row_clues = [["", ""], ["", ""], ["", ""], ["", ""], ["", ""]]
+col_clues = [[1,1],[1,1],[3,1],[2],[2,1]]
+row_clues = [[1,1],[3],[4],[],[3,1]]

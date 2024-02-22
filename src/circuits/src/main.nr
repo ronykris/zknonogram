@@ -92,7 +92,9 @@ fn verify_col(col: [bool; 5], clues: [u8; 2]) {
 
     let mut sequence_count: u32 = 0;
     let mut sequence_array: [[bool; 5]; 100] = [[false; 5]; 100];
-    for i in 0..(5 - clues[0] - clues[1] - 1) {
+    println(clues[0]);
+    println(clues[1]);
+    for i in 0..(5 - (clues[0] + clues[1] + 1)) {
         sequence[i] = true;
         if (clues[0] > 1) {
             for clue_1 in i + 1..(i + clues[0]) {
